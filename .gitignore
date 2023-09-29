@@ -39,7 +39,6 @@ default.profraw
 
 SwiftLint.xcodeproj
 SwiftLint.pkg
-*.zip
 benchmark_*
 osscheck/
 docs/
