@@ -878,6 +878,12 @@ class PrefixedTopLevelConstantRuleGeneratedTests: SwiftLintTestCase {
     }
 }
 
+class PresenterNameRuleGeneratedTests: SwiftLintTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(PresenterNameRule.description)
+    }
+}
+
 class PrivateActionRuleGeneratedTests: SwiftLintTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(PrivateActionRule.description)
@@ -923,6 +929,12 @@ class ProhibitedInterfaceBuilderRuleGeneratedTests: SwiftLintTestCase {
 class ProhibitedSuperRuleGeneratedTests: SwiftLintTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(ProhibitedSuperRule.description)
+    }
+}
+
+class ProtocolNamingRuleGeneratedTests: SwiftLintTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(ProtocolNamingRule.description)
     }
 }
 
@@ -1055,6 +1067,12 @@ class SelfBindingRuleGeneratedTests: SwiftLintTestCase {
 class SelfInPropertyInitializationRuleGeneratedTests: SwiftLintTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(SelfInPropertyInitializationRule.description)
+    }
+}
+
+class ServiceNamingRuleGeneratedTests: SwiftLintTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(ServiceNamingRule.description)
     }
 }
 
@@ -1355,6 +1373,12 @@ class VerticalWhitespaceOpeningBracesRuleGeneratedTests: SwiftLintTestCase {
 class VerticalWhitespaceRuleGeneratedTests: SwiftLintTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(VerticalWhitespaceRule.description)
+    }
+}
+
+class ViewControllerProtocolNameRequirementRuleGeneratedTests: SwiftLintTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(ViewControllerProtocolNameRequirementRule.description)
     }
 }
 

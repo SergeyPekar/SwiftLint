@@ -125,7 +125,7 @@ internal extension Configuration {
                     for invalidRuleIdentifier in invalidRuleIdentifiers.subtracting(invalidRuleIdsWarnedAbout) {
                         invalidRuleIdsWarnedAbout.insert(invalidRuleIdentifier)
                         queuedPrintError(
-                            "warning: '\(invalidRuleIdentifier)' is not a valid rule identifier"
+                            "warning: '\(invalidRuleIdentifier)' is not a valid rule identifier ---- very not valid"
                         )
                     }
 

@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftLint",
-    platforms: [.macOS(.v12)],
+    platforms: [.macOS(.v13)],
     products: [
         .executable(name: "swiftlint", targets: ["swiftlint"]),
         .library(name: "SwiftLintFramework", targets: ["SwiftLintFramework"]),
@@ -112,10 +112,15 @@ let package = Package(
                 "SwiftLintTestHelpers"
             ]
         ),
-        .binaryTarget(
-            name: "SwiftLintBinary",
-            url: "https://github.com/realm/SwiftLint/releases/download/0.52.4/SwiftLintBinary-macos.artifactbundle.zip",
-            checksum: "8a8095e6235a07d00f34a9e500e7568b359f6f66a249f36d12cd846017a8c6f5"
-        )
+        //        .binaryTarget(
+        //            name: "SwiftLintBinary",
+        //            url: "https://github.com/SergeyPekar/SwiftLint/releases/download/0.0.1/SwiftlintCompeto.artifactbundle.zip",
+        //            checksum: "7020b6b0b964e839cc8659b775d2b3871d95d85d56af0775ad6a3f8f0dfc0c30"
+        //        )
+            .binaryTarget(
+                name: "SwiftLintBinary",
+                path: "SwiftlintCompeto.artifactbundle.zip"
+            )
+        
     ]
 )
